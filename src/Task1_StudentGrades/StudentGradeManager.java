@@ -73,8 +73,11 @@ public class StudentGradeManager {
         String topStudent = "";
         String lowStudent = "";
 
-        System.out.println("\n--- Student Summary Report ---");
-
+      
+        System.out.println("\n--- Student Summary Report ---\n");
+        for(int i=0; i<30; i++){
+            System.out.print("-");
+        }
         for (Student s : students) {
             System.out.println(s.name + ": " + s.grade);
             total += s.grade;
